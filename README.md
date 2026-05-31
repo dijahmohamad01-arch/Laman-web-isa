@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+```html
 <html lang="ms">
 <head>
     <meta charset="UTF-8">
@@ -8,7 +8,18 @@
         :root { --primary: #2563eb; --secondary: #1e293b; --accent: #f59e0b; --light: #f8fafc; }
         body { font-family: 'Segoe UI', Tahoma, sans-serif; margin: 0; line-height: 1.6; color: var(--secondary); background: var(--light); }
         .container { max-width: 800px; margin: auto; padding: 20px; }
-        header { background: white; padding: 20px; text-align: center; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        
+        /* Header dengan Logo di Kanan */
+        header { 
+            background: white; 
+            padding: 15px 20px; 
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+        }
+        .logo-img { height: 50px; width: auto; }
+        
         .hero { padding: 50px 20px; background: linear-gradient(135deg, #2563eb, #1d4ed8); color: white; text-align: center; }
         .btn { display: inline-block; padding: 15px 30px; background: var(--accent); color: white; text-decoration: none; border-radius: 5px; font-weight: bold; margin-top: 20px; }
         
@@ -23,7 +34,8 @@
 <body>
 
 <header>
-    <h2>ISA WIRING</h2>
+    <div></div> <!-- Ruang kosong di kiri -->
+    <img src="1002063813.jpg" alt="Isa Wiring Logo" class="logo-img">
 </header>
 
 <section class="hero">
@@ -52,3 +64,5 @@
 
 </body>
 </html>
+
+```
